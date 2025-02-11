@@ -1,13 +1,18 @@
-import './App.css';
+import styled from "styled-components";
+import drawerFront from "./assets/drawer_front.svg";
 
-function App() {
+const StyledImage = styled.img`
+  width: 95vw; 
+  height: auto;
+  margin-top: 30rem;
+`;
+
+const App = () => {
   return (
     <>
-      <p>Urbanist</p>
-      <p style={{ fontFamily: 'IntroScript' }}>IntroScript</p>
-      <p style={{ fontFamily: 'SaoTorpes' }}>Sao Torpes</p>
+      <StyledImage src={drawerFront} alt="Front of file drawer" />
     </>
   );
-}
+};
 
 export default App;
