@@ -28,13 +28,26 @@ p {
     height: 100vh;
 }
 
+.knowledge {
+    display: flex;
+    flex-direction: column;
+}
+
 .logo {
     width: 45vw;
 }
 
 .eye {
     position: absolute;
-    top: 36.5%;
+    top: 32%;
     left: 46%;
+}
 
+.skillTitle{
+    font-weight: 700;
+}
+
+.skill {
+    font-size: 0.8rem;
+    padding-bottom: 0.6rem;
 }
