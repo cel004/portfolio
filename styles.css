@@ -1,0 +1,28 @@
+html {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    background-color: #E9E1E5;
+    font-family: 'DMMono';
+}
+
+p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+@font-face {
+    font-family: DMMono;
+    src: url(assets/fonts/DMMono-Regular.ttf);
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logo {
+    width: 50vw;
+    padding-top: 3rem;
+}
