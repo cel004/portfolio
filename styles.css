@@ -5,6 +5,11 @@ html {
     font-family: 'DMMono';
 }
 
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
 p {
     margin: 0;
     font-size: 1rem;
@@ -20,9 +25,9 @@ p {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    height: 100vh;
 }
 
 .logo {
-    width: 50vw;
-    padding-top: 3rem;
+    width: 45vw;
 }
