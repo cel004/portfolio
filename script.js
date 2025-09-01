@@ -16,5 +16,5 @@ document.body.addEventListener('mousemove', (event) => {
   const moveX = Math.cos(angle) * maxDistance;
   const moveY = Math.sin(angle) * maxDistance;
 
-  eye.style.transform = `translate(${moveX}px, ${moveY}px)`;
+  eye.style.transform = `translate(-50%, -50%) translate(${moveX}px, ${moveY}px)`;
 });

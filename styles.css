@@ -33,14 +33,22 @@ p {
     flex-direction: column;
 }
 
+.kittyface {
+    position: relative;
+    display: inline-block;
+}
+
 .logo {
+    display: block;
     width: 45vw;
 }
 
 .eye {
     position: absolute;
-    top: 32%;
-    left: 46%;
+    width: 8vw;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* centers the eye */
 }
 
 .skillTitle{
