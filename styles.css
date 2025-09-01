@@ -31,3 +31,10 @@ p {
 .logo {
     width: 45vw;
 }
+
+.eye {
+    position: absolute;
+    top: 36.5%;
+    left: 46%;
+
+}
