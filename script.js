@@ -18,3 +18,12 @@ document.body.addEventListener('mousemove', (event) => {
 
   eye.style.transform = `translate(-50%, -50%) translate(${moveX}px, ${moveY}px)`;
 });
+
+const previewButtons = document.querySelectorAll('.preview-button');
+
+previewButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        const preview = button.nextElementSibling;
+        preview.classList.toggle('show');
+    });
+});

@@ -38,7 +38,7 @@ p {
     align-items: center;
     flex-direction: column;
     height: 100vh;
-    margin-top: 60rem;
+    margin-top: 32rem;
 }
 
 .section {
@@ -79,15 +79,36 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 1s ease;
+
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 2.5s ease;
+    position: relative;
 }
 
-.preview-button:hover + .preview {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
+.preview.show {
+    max-height: 50rem;
+}
+
+.preview::before,
+.preview::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 2rem;
+    pointer-events: none;
+}
+
+.preview::before {
+    z-index: 1;
+    top: -0.5rem;
+    background: linear-gradient(to bottom, #E9E1E5, rgba(233,225,229,0));
+}
+
+.preview::after {
+    bottom: -0.5rem;
+    background: linear-gradient(to top, #E9E1E5, rgba(233,225,229,0));
 }
 
 .gif { 
@@ -98,6 +119,7 @@ p {
 
 button {
     padding: 0.2rem;
+    margin-bottom: 1.5rem;
     font-family: 'DMMono';
     font-size: 0.7rem;
     max-width: 5rem;
