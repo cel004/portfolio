@@ -27,3 +27,8 @@ previewButtons.forEach(button => {
         preview.classList.toggle('show');
     });
 });
+
+const yearSpan = document.getElementById('year');
+const currentYear = new Date().getFullYear();
+yearSpan.textContent = currentYear;
+
