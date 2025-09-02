@@ -69,7 +69,7 @@ h1 {
 }
 
 .subTitle{
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     font-weight: 700;
     margin-bottom: 0.5rem;
 }
@@ -80,19 +80,20 @@ h1 {
     max-width: 88vw;
 }
 
-.preview{
+.preview {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 
     max-height: 0;
     overflow: hidden;
     transition: max-height 2.5s ease;
     position: relative;
+    
 }
 
 .preview.show {
-    max-height: 50rem;
+    max-height: 1000rem;
 }
 
 .preview::before,
