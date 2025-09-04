@@ -28,7 +28,7 @@ function togglePreview(button) {
     preview.style.maxHeight = null;
     button.textContent = "Preview";
     button.style.backgroundColor = "#000000ff";
-    button.style.color = "#E9E1E5";
+    button.style.color = "#e2d9de";
   } else {
     // expand to show full gif
     preview.style.maxHeight = preview.scrollHeight + "px";

@@ -1,11 +1,10 @@
 html {
     scroll-behavior: smooth;
-    background-color: #E9E1E5;
+    background-color: #e2d9de;
     font-family: 'DMMono';
 }
 
 html, body {
-  height: 100%;
   margin: 0;
   -ms-overflow-style: none;
   scrollbar-width: none;
@@ -108,18 +107,18 @@ h1 {
 
 .preview::before {
     z-index: 1;
-    top: -0.5rem;
-    background: linear-gradient(to bottom, #E9E1E5, rgba(233,225,229,0));
+    top: 0.2rem;
+    background: linear-gradient(to bottom, #e2d9de, rgba(233,225,229,0));
 }
 
 .preview::after {
-    bottom: -0.5rem;
-    background: linear-gradient(to top, #E9E1E5, rgba(233,225,229,0));
+    bottom: 0.2rem;
+    background: linear-gradient(to top, #e2d9de, rgba(233,225,229,0));
 }
 
 .gif { 
     margin-top: 1rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 1));
 }
 
