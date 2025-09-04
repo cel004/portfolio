@@ -27,14 +27,12 @@ function togglePreview(button) {
     // collapse
     preview.style.maxHeight = null;
     button.textContent = "Preview";
-    button.style.backgroundColor = "#000000ff";
-    button.style.color = "#e2d9de";
+    button.classList.remove("open");
   } else {
     // expand to show full gif
     preview.style.maxHeight = preview.scrollHeight + "px";
     button.textContent = "Hide";
-    button.style.backgroundColor = "#93d8cfff";
-    button.style.color = "#000000";
+    button.classList.add("open");
     
   }
 }
