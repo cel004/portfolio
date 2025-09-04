@@ -87,13 +87,13 @@ h1 {
 
     max-height: 0;
     overflow: hidden;
-    transition: max-height 2.5s ease;
+    transition: max-height 0.5s ease;
     position: relative;
     
 }
 
 .preview.show {
-    max-height: 1000rem;
+    max-height: 50rem;
 }
 
 .preview::before,
@@ -134,10 +134,10 @@ button {
     border: 1px solid #000000;
     border-radius: 8px;
     cursor: pointer;
-    transition: background-color 0.5s ease, color 0.5s ease;
+    transition: background-color 0.15s ease, color 0.15s ease;
 }
 
-button:hover {
+button:active {
     background-color: #E9E1E5;
     color: #000000;
 }

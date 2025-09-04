@@ -19,13 +19,33 @@ document.body.addEventListener('mousemove', (event) => {
   eye.style.transform = `translate(-50%, -50%) translate(${moveX}px, ${moveY}px)`;
 });
 
-const previewButtons = document.querySelectorAll('.preview-button');
+function togglePreview(button) {
+  const preview = button.nextElementSibling;
+  const isOpen = preview.style.maxHeight;
 
-previewButtons.forEach(button => {
-    button.addEventListener('click', () => {
-        const preview = button.nextElementSibling;
-        preview.classList.toggle('show');
-    });
+  if (isOpen) {
+    // collapse
+    preview.style.maxHeight = null;
+    button.textContent = "Preview";
+    button.style.backgroundColor = "#000000ff";
+    button.style.color = "#E9E1E5";
+  } else {
+    // expand to show full gif
+    preview.style.maxHeight = preview.scrollHeight + "px";
+    button.textContent = "Hide";
+    button.style.backgroundColor = "#93d8cfff";
+    button.style.color = "#000000";
+    
+  }
+}
+
+// keep height correct if window resizes
+window.addEventListener("resize", () => {
+  document.querySelectorAll(".preview").forEach(preview => {
+    if (preview.style.maxHeight) {
+      preview.style.maxHeight = preview.scrollHeight + "px";
+    }
+  });
 });
 
 const yearSpan = document.getElementById('year');
