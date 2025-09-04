@@ -41,6 +41,17 @@ p {
     font-size: 0.7rem;
 }
 
+#warning{
+    font-size: 0.7rem !important;
+    font-weight: 600;
+    margin-top: 1rem;
+    margin-bottom: 2.5rem;
+}
+
+.bio {
+    font-size: 0.9rem;
+}
+
 h1 {
     font-size: 1.5rem;
 }
@@ -143,6 +154,11 @@ h1 {
 
 .gif { 
     filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 1));
+    max-width: 80%;
+}
+
+#ditto {
+    max-width: 60%
 }
 
 button {
@@ -168,4 +184,122 @@ button:hover{
 button.open {
     background-color: #93d8cf;
     color: #000000;
+}
+
+a.subText {
+    color: #000000;
+    font-style: italic;
+    transition: color 0.15s ease, color 0.15s ease;
+}
+
+a.subText:hover {
+    color: #44afa1;
+}
+
+@media(min-width: 425px){
+    .logo{
+        width: 90%;
+    }
+    .eye{
+        width: 16%;
+    }
+    .header {
+        max-width: 80vw
+    }
+}
+
+@media(min-width: 768px){
+    .logo{
+        width: 100%;
+    }
+    .eye{
+        width: 18%;
+    }
+    .gif {
+        max-width: 70%;
+    }
+    #ditto{
+        max-width: 50%;
+    }
+}
+
+@media(min-width: 768px){
+    .header {
+        max-width: 75vw
+    }
+    .gif {
+        max-width: 55%;
+    }
+    #ditto{
+        max-width: 45%;
+    }
+    .subtitle{
+        font-size: 1rem;
+    }
+    .subText{
+        font-size: 0.9rem;
+    }
+    h1 {
+        font-size: 1.8rem;
+    }
+    .bio {
+        font-size: 1rem;
+    }
+    #warning {
+        font-size: 0.9rem;
+    }
+}
+
+@media(min-width: 1440px){
+    .header {
+        max-width: 65vw
+    }
+    .gif {
+        max-width: 55%;
+    }
+    #ditto{
+        max-width: 40%;
+    }
+    /* .subtitle{
+        font-size: 1.1rem;
+    }
+    .subText{
+        font-size: 1rem;
+    }
+    h1 {
+        font-size: 1.9rem;
+    }
+    .bio {
+        font-size: 1.1rem;
+    }
+    #warning {
+        font-size: 1rem;
+    } */
+}
+
+@media(min-width: 1440px){
+    .header {
+        max-width: 65vw
+    }
+    .gif {
+        max-width: 45%;
+    }
+    #ditto{
+        max-width: 32%;
+    }
+    /* .subtitle{
+        font-size: 1.1rem;
+    }
+    .subText{
+        font-size: 1rem;
+    }
+    h1 {
+        font-size: 1.9rem;
+    }
+    .bio {
+        font-size: 1.1rem;
+    }
+    #warning {
+        font-size: 1rem;
+    } */
 }
